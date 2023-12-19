@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 requires = ["setuptools >= 50", "setuptools-scm[toml]>=6.2", "wheel"]
 
 [project]
-name = "Envx"
+name = "HELX-envs"
 dynamic = ["version", "dependencies"]
 description = "Interoperate among reinforcement learning libraries with jax, pytorch, gym and dm_env"
 requires-python = ">=3.8"
@@ -52,18 +52,18 @@ classifiers = [
 
 
 [project.urls]
-homepage = "https://github.com/epignatelli/envx"
-repository = "https://github.com/epignatelli/envx"
-bug_tracker = "https://github.com/epignatelli/envx/issues"
+homepage = "https://github.com/epignatelli/helx-envs"
+repository = "https://github.com/epignatelli/helx-envs"
+bug_tracker = "https://github.com/epignatelli/helx-envs/issues"
 
 
 [tool.setuptools.dynamic]
-version = {attr = "envx._version.__version__"}
+version = {attr = "helx_envs._version.__version__"}
 dependencies = {file = "./requirements.txt"}
 
 
 [tool.setuptools.packages.find]
-include = ["envx*"]
+include = ["helx_envs*"]
 exclude = ["test", "examples"]
 
 
