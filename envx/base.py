@@ -24,8 +24,8 @@ from flax import struct
 import jax
 from jax.random import KeyArray
 
-from ..mdp import Timestep, TRANSITION
-from ..spaces import Space
+from helx.mdp import Timestep, TRANSITION
+from helx.spaces import Space
 
 
 class Environment(struct.PyTreeNode):

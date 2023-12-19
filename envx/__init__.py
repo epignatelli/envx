@@ -12,10 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
-from .agent import Agent
-from .dqn import DQN, DQNHParams
-from .ddqn import DDQN, DDQNHParams
-from .dueling_dqn import DuelingDQN, DuelingDQNHParams
-from .sac import SAC, SACHParams
-from .sacd import SACD, SACDHParams
+# Make sure that the gym registry is populated
+# with exteral environments.
+from . import (
+    environment,
+    wrappers,
+)
